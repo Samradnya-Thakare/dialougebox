@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dialog Box</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>Full Stack Web Development Course</h2>
+  <p>Full Stack Web Development courses cover both front-end and back-end development, teaching HTML, CSS, JavaScript,
+    server-side scripting, and database management. Perfect for developers looking to build comprehensive web
+    applications.</p>
+  <div class="parent">
+    <div class="card">
+      <img src="two.png" class="card-img" />
+      <h2 class="card-title">Beginner Full Stack Web Development</h2>
+    </div>
+  </div>
+  <button id="openDialog" onclick="opendialogBox()">See Course</button>
+
+  <div id="dialogOverlay" class="overlay">
+    <div class="dialogBox">
+      <img src="close.png" class="close-icon" alt="close" onclick="closedialogBox()">
+      <h2>Beginner Full Stack Web Development: HTML, CSS, React & Node</h2>
+      <p>Learn web development with HTML, CSS, Bootstrap 4, ES6 React and Node.</p>
+      <ul class="list">
+        <li>
+          Build websites with HTML & CSS
+        </li>
+        <li>
+          Build backend servers & APIs with Node and Express
+        </li>
+        <li>
+          Work with NoSQL databases like MongoDB
+        </li>
+      </ul>
+      <button id="closeDialog" onclick="closedialogBox()">Add to cart</button>
+    </div>
+  </div>
+  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
